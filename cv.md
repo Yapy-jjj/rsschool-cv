@@ -3,14 +3,13 @@
 ## Contact Information
 ***
 
-<table border="0" cellpadding="0" cellspacing="0">    
-    <tr>
-      <td><img src="https://img.icons8.com/?size=30&id=OdeDzIaTFmYC&format=png&color=000000" width="20"> Russia, Kaliningrad</td>
-      <td><img src="https://img.icons8.com/?size=30&id=fUHYOFprDglQ&format=png&color=000000" width="20"> +7 921 145-15-99</td>
-      <td><img src="https://img.icons8.com/?size=30&id=vc1uYaLd81No&format=png&color=000000" width="20"> <a href="mailto:katesizova10@gmail.com"> katesizova10@gmail.com</td>
-      <td><img src="https://img.icons8.com/?size=30&id=12598&format=png&color=000000" width="20"> <a href="https://github.com/Yapy-jjj" target="_blank">Мy GitHub</a></td>
-    </tr>
-</table>
+  ![](https://img.icons8.com/?size=30&id=OdeDzIaTFmYC&format=png&color=000000) Russia, kaliningrad
+  
+  ![](https://img.icons8.com/?size=30&id=fUHYOFprDglQ&format=png&color=000000) +7 921 145-15-99
+  
+  ![](https://img.icons8.com/?size=30&id=vc1uYaLd81No&format=png&color=000000) [katesizova10@gmail.com](mailto:katesizova10@gmail.com)
+  
+  ![](https://img.icons8.com/?size=30&id=12598&format=png&color=000000) [Ekaterina Sizova](https://github.com/Yapy-jjj)
   
 ## About Me
 ***
