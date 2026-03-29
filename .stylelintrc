@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-htmlacademy",
+  "rules": {
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["composes"]
+      }
+    ],
+    "unit-allowed-list": ["em", "rem", "s", "px"]
+  }
+}
