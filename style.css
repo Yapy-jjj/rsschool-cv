@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+.intro__title {
+    text-align: center;
+}
+
+body {
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: 'Nunito', Verdana, sans-serif;
+
+    .wrapper {
+        max-width: 900px;
+        margin: 0 auto; 
+        padding: 0 20px;
+    }
+
+    .header__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        background-color: #ffeff6;
+        border-radius: 5px;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 2rem;
+
+        .navigation__item{  
+            list-style: none;
+            background-color: #e9b4cc;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            &:hover {
+                background-color: #d483a4;
+            }
+            a{
+                text-decoration: none;
+                display: block;
+                padding: 0.8rem 1.0rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .intro__photo {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 60%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .container {
+        padding-bottom: 40px;
+        border-bottom: 1px solid #e19ebc;
+    }
+
+    .contacts__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+
+    .contacts__item {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    a {
+        color: #6c1b3f;
+    }
+
+    .code-block {
+        background-color: #e9b4cc;
+        border-radius: 10px;
+    }
+
+    .footer {
+        background-color: #fdf2f8; 
+        border-top: 2px solid #e19ebc;
+        padding: 2rem 0;
+        margin-top: 4rem;
+    }
+
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .footer__item {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        img {
+            height: 40px;
+            width: auto;
+        }
+    }
+}

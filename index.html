@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ekaterina Sizova - CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header container">
+      <div class="wrapper header__wrapper">
+        <a href="#" class="logo">Logo</a>
+        <nav class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation__item"><a href="#about">About me</a></li>
+            <li class="navigation__item"><a href="#skills">Skills</a></li>
+            <li class="navigation__item"><a href="#code-example">Code example</a></li>
+            <li class="navigation__item"><a href="#projects">Projects</a></li>
+            <li class="navigation__item"><a href="#education">Education</a></li>
+            <li class="navigation__item"><a href="#languages">Languages</a></li>
+          </ul>
+        </nav>        
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="main"> 
+      
+      <section class="intro container">
+        <div class="wrapper">
+          <div class="image-wrapper">
+            <img 
+              src="assets/images/avatar.jpg" 
+              alt="My personal Photo"
+              class="intro__photo"
+            >
+          </div>
+          <div class="intro__title">
+            <h1>Ekaterina Sizova</h1>
+            <p>Junior Front-End Developer | Math & Programming Student</p>
+          </div>
+        </div>
+      </section>      
+
+      <div class="wrapper"> 
+
+        <!-- contact  -->
+        <section id="contacts" class="contacts container">
+          <h2>Contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <img
+                src="https://img.icons8.com/?size=30&id=OdeDzIaTFmYC&format=png&color=000000"
+                alt="Location"
+              />
+              <span>Russia, Kaliningrad</span>
+            </li>
+            <li class="contacts__item">
+              <img
+                src="https://img.icons8.com/?size=30&id=fUHYOFprDglQ&format=png&color=000000"
+                alt="Phone"
+              />
+              <a href="tel:+79211451599">+7 921 145-15-99</a>
+            </li>
+            <li class="contacts__item">
+              <img
+                src="https://img.icons8.com/?size=30&id=vc1uYaLd81No&format=png&color=000000"
+                alt="Email"
+              />
+              <a href="mailto:katesizova10@gmail.com">katesizova10@gmail.com</a>
+            </li>
+            <li class="contacts__item">
+              <img
+                src="https://img.icons8.com/?size=30&id=12598&format=png&color=000000"
+                alt="GitHub"
+              />
+              <a href="https://github.com/Yapy-jjj" target="_blank">My GitHub</a>
+            </li>
+          </ul>
+        </section>
+        <!-- /contact  -->
+
+
+        <!-- about-me  -->
+        <section id="about-me" class="about-me container">          
+          <h2>About Me</h2>
+          <p>
+            I am a 19-year-old second-year student majoring in Applied Mathematics and Programming. 
+            I am currently enrolled in the RS School Front-End Development program because I want to turn my theoretical knowledge into real development skills. 
+            I am highly motivated to grow in the front-end field and am looking for opportunities to apply and develop my abilities as a Junior Front-End Developer.
+          </p>  
+        </section>
+        <!-- /about-me  -->
+        
+        <!-- a list of skills  -->
+        <section id="skills" class="skills container">
+          <h2>A list of skills</h2>
+          <ul class="skills-list">
+            <li class="skill__item" >Git, Github</li>
+            <li class="skill__item" >Python</li>
+          </ul>
+        </section>
+        <!-- /a list of skills  -->
+
+        <!--code example-->
+        <section id="code-example" class="code-example container">
+          <h2>Code Example (Python / Pygame)</h2>
+          <p>Fragment of the "Purple Sky" game logic — handling ship movement and physics:</p>
+          <pre class="code-block">
+            <code>
+        class Ship(pygame.sprite.Sprite):
+            def __init__(self):
+                super().__init__()
+                self.pos = pygame.math.Vector2(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)
+                self.vel = pygame.math.Vector2(0, 0)
+                self.angle = 0
+                self.thrust_power = 0.25
+                self.friction = 0.97
+
+            def apply_thrust(self):
+                # Calculating acceleration based on rotation angle
+                rad = math.radians(self.angle)
+                acc = pygame.math.Vector2(math.cos(rad), -math.sin(rad)) * self.thrust_power
+                self.vel += acc
+
+            def update(self):
+                self.pos += self.vel
+                self.vel *= self.friction  # Applying space friction
+                # ... logic for screen wrapping and rotation
+            </code>
+          </pre>
+        </section>
+        <!--/code example-->
+
+        <section id="projects" class="projects container">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+                <p>HTML, SCSS, BEM</p>
+                <h3>Portfolio website</h3>
+                <p>I built this project to master semantic HTML5 layout and BEM methodology by creating a professional and well-structured digital CV.</p>
+                <a href="https://Yapy-jjj.github.io/rsschool-cv/" target="_blank">View Project</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- education -->
+        <section id="education" class="education container">
+          <h2>Education</h2>
+          <article class="education__item">
+            <h3 class="education__degree">Javascript/Front-End Programming</h3>
+            <p class="education__year">2026-present</p>
+            <div class="education__company"><a href="https://rs.school/js/">Rolling Scopes School</a></div>
+          </article>
+          <article class="education__item">
+            <h3 class="education__degree">Bachelor of Science in Applied Mathematics and Computer Science</h3>
+            <p class="education__year">2025-present</p>
+            <div class="education__company"><a href="https://kantiana.ru/en/universitys/institute-of-high-technology/">IKBFU</a></div>
+          </article>            
+        </section>    
+        <!-- /education -->
+
+        <!-- languages -->
+          <section id="languages" class="languages container">
+            <h2>Languages</h2>
+            <ul class="languages__list">
+              <li class="languages__item">Russian - Native</li>
+              <li class="languages__item">English - Fluent</li>
+              <li class="languages__item">German - Intermediate</li>
+            </ul>
+          </section>         
+        <!-- /languages -->
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <div class="wrapper footer__wrapper">
+        <p>2026 by Ekaterina Sizova</p>
+        <div class="footer__item">
+          <a href="https://github.com/Yapy-jjj" target="_blank">GitHub</a>
+          <a href="https://rs.school/js/">
+           <img src="assets/images/rs-school-logo.svg" alt="RS School logo">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
