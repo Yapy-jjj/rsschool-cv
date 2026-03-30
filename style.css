@@ -4,6 +4,7 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 .intro__title {
@@ -50,11 +51,15 @@ body {
         }
     }
 
+    .intro {
+        background-color: #ffeff6;
+    }
+    
     .intro__photo {
         width: 200px;
         height: 300px;
         object-fit: cover;
-        border-radius: 60%;
+        border-radius: 50%;
         display: block;
         margin: 20px auto;
     }
@@ -62,6 +67,7 @@ body {
     .container {
         padding-bottom: 40px;
         border-bottom: 1px solid #e19ebc;
+        scroll-margin-top: 40px;
     }
 
     .contacts__list {
@@ -69,12 +75,30 @@ body {
         display: flex;
         flex-wrap: wrap;
         gap: 5rem;
+        align-items: center;
     }
 
-    .contacts__item {
+    .contacts__item a {
         display: flex;
-        gap: 1rem;
+        width: 60px;
+        height: 60px;
         align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+    }
+
+    .contacts__item a:hover {
+        background-color: #e9b4cc;
+        transform: scale(1.25)
+    }
+
+    .contacts__item img {
+        width: 30px;  
+        height: 30px;
+        display: block;
     }
 
     a {
@@ -84,6 +108,14 @@ body {
     .code-block {
         background-color: #e9b4cc;
         border-radius: 10px;
+        padding: 1.5rem;
+        overflow-x: auto;
+        display: flex;
+        justify-content: center;
+        code {
+            font-size: 1.5rem;
+            display: block;  
+        }
     }
 
     .footer {
