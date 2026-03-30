@@ -53,6 +53,11 @@ body {
 
     .intro {
         background-color: #ffeff6;
+        position: relative;
+        height: 500px;     
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .intro__photo {
@@ -71,11 +76,35 @@ body {
     }
 
     .contacts__list {
+        position: absolute;
+
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         gap: 5rem;
         align-items: center;
+        pointer-events: none;
+
+    }
+
+    .contacts__item {
+        position: absolute;
+        pointer-events: auto;
+    }
+
+    .contact--github {
+        top: 83px;
+        left: 500px;
+    }
+
+    .contact--mail {
+        bottom: 150px;
+        left: 400px;
+    }
+
+    .contact--phone {
+        top: 48%;
+        left: 31%;
     }
 
     .contacts__item a {
@@ -88,17 +117,35 @@ body {
 
         transition: background-color 0.3s ease, transform 0.3s ease;
 
+
+        animation: levitation 3s infinite ease-in-out;     
+
+
     }
 
     .contacts__item a:hover {
         background-color: #e9b4cc;
-        transform: scale(1.25)
     }
 
     .contacts__item img {
         width: 30px;  
         height: 30px;
         display: block;
+        transition: transform 0.3s ease;
+    }
+
+    .contacts__item a:hover img {
+        transform: scale(1.25)
+    }
+
+    .contacts__item:nth-child(2n) a {
+        animation-delay: 0.5s; 
+        animation-duration: 3.5s; 
+    }
+
+    .contacts__item:nth-child(3n) a {
+        animation-delay: 1s;
+        animation-duration: 4s;
     }
 
     a {
@@ -140,4 +187,11 @@ body {
             width: auto;
         }
     }
+}
+
+@keyframes levitation {
+    0% {transform: translateY(0)}
+    50% {transform: translateX(-10px);}
+    100% {transform: translateY(0)}
+
 }
